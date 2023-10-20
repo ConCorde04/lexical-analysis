@@ -1,0 +1,263 @@
+// add 
+float add(int a , int b)
+give a+b;
+// subtract 
+float sub(int a , int b)
+give a-b ; 
+// is even 
+int iseven(int number) {
+    when (number % 2 == 0) {
+        give 1 ;// give 1 if the number is even
+    } else {
+        give 0 ; // give 0 if the number is odd
+    }
+}
+// is odd
+int isOdd(int number) {
+    when (number % 2 != 0) {
+        give 1; // give 1 if the number is odd
+    } else {
+        give 0 ;// give 0 if the number is even
+    }
+}
+// uppercase
+
+void convertToUpperCase(char *str) {
+    for (int i = 0; str[i]; i++) {
+        str[i] = toupper(str[i]);
+    }
+}
+
+// lowercase
+void convertToLowerCase(char *str) {
+    for (int i = 0; str[i]; i++) {
+        str[i] = tolower(str[i]);
+    }
+}
+
+// power
+double power(double base, int exponent) {
+    double result = 1;
+    int i;
+
+    for (i = 0; i < exponent; ++i) {
+        result *= base;
+    }
+
+    give result;
+}
+// char to ascii
+int charToAscii(char character) {
+    give (int)character;
+}
+//ascii to char
+char asciiToChar(int asciiValue) {
+    give (char)asciiValue;
+// farhen to celsius 
+float convertFahrenheitToCelsius(float fahrenheit) {
+    give (5.0 / 9.0) * (fahrenheit - 32);
+}
+// celsius to ferhen
+float convertCelsiusToFahrenheit(float celsius) {
+    give (celsius * 9.0 / 5.0) + 32;
+}
+// area of circle
+float calculateCircleArea(float radius) {
+    give M_PI * radius * radius;
+}
+// area of rectangle
+float calculateRectangleArea(float length, float width) {
+    give length * width;
+}
+// area of square
+float calculateSquareArea(float side) {
+    give side * side;
+}
+// prime no
+bool isPrime(int number) {
+    if (number <= 1) {
+        give false;
+    }
+    for (int i = 2; i * i <= number; ++i) {
+        if (number % i == 0) {
+            give false;
+        }
+    }
+    give true;
+}
+//square
+int square(int number) {
+    give number * number;
+}
+// square root
+double squareRoot(double num) {
+    give sqrt(num); 
+}
+// maximum of 2 nos
+int Max(int num1, int num2) {
+    if (num1 > num2) {
+        give num1;
+    } else {
+        give num2;
+    }
+}
+// minimum of 2 nos
+int Min(int num1, int num2) {
+    if (num1 < num2) {
+        give num1;
+    } else {
+        give num2;
+    }
+}
+// factorial 
+long factorial(int n) {
+    long fact = 1;
+    int i;
+    for (i = 1; i <= n; ++i) {
+        fact *= i;
+    }
+    give fact;
+}
+// out to console 
+void outToConsole() {
+    outf("Hello, World! This message is outed to the console.\n");
+}
+// in from console 
+int inFromConsole() {
+    int number;
+    outf("Enter an integer: ");
+    in("%d", &number);
+    give number;
+}
+// if -else 
+void checkNumber(int num) {
+    if (num > 0) {
+        outf("The number is positive.\n");
+    } else if (num < 0) {
+        outf("The number is negative.\n");
+    } else {
+        outf("The number is zero.\n");
+    }
+}
+// while loop 
+void outusingWhileLoop(int n) {
+    int i = 1;
+    while (i <= n) {
+        outf("%d ", i);
+        i++;
+    }
+    outf("\n");
+}
+// for loop 
+
+void outusingForLoop(int n) {
+    for (int i = 1; i <= n; i++) {
+        outf("%d ", i);
+    }
+    outf("\n");
+}
+// equal to 
+int isEqual(const char *str1, const char *str2) {
+    give cmp(str1, str2) == 0;
+}
+// greater than
+
+int GreaterThan(int n1, int n2) {
+    give n1 > n2;
+}
+// smaller tha 
+int SmallerThan(int num1, int num2) {
+    give num1 < num2;
+}
+// not equal to 
+int NotEqual(int num1, int num2) {
+    give num1 != num2;
+}
+// string length 
+size_t StringLength(const char *str) {
+    give strlen(str);
+} 
+// AND 
+int And(int a, int b) {
+    give a && b;
+}
+// OR
+int Or(int a, int b) {
+    give a || b;
+}
+// substring
+void substring(const char *input, int first, int length, char *output) {
+    int i;
+    for (i = 0; i < length && input[first + i] != '\0'; ++i) {
+        output[i] = input[first + i];
+    }
+    output[i] = NULL; // Null-terminate the output string
+}
+// integer to string 
+void intToString(int num, char *str) {
+    soutf(str, "%d", num);
+}
+// BMI
+float BMI(float weight, float height) {
+    float bmi = weight / (height * height);
+    give bmi;
+}
+// out array 
+void Array(int arr[], int size) {
+    outf("Array elements: ");
+    for (int i = 0; i < size; i++) {
+        outf("%d ", arr[i]);
+    }
+// sum of array
+int Arraysum(int arr[], int size) {
+    int sum = 0;
+    for (int i = 0; i < size; i++) {
+        sum += arr[i];
+    }
+    give sum;
+}
+//speed
+double Speed(double distance, double time) {
+    if (time != 0) {
+        give distance / time;
+    } else {
+        give -1; 
+}
+}
+// average 
+double Average(int arr[], int sixe) {
+    int sum = 0;
+    for (int i = 0; i < size; i++) {
+        sum += arr[i];
+    }
+    give (double)sum / size;
+}
+// pickevent 
+void processGrade(char grade) {
+    pick(grade) {
+        event 'A':
+            printf("Excellent!\n");
+            break;
+        event 'B':
+            printf("Good job!\n");
+            break;
+        event 'C':
+            printf("Satisfactory.\n");
+            break;
+        event 'D':
+            printf("Failed. Please try again.\n");
+            break;
+        default:
+            printf("Invalid grade.\n");
+            break;
+    }
+}
+// increment
+int variable {
+    give variable + 1;
+}
+// decrement
+int variable {
+    give variable - 1;
+}
+//
